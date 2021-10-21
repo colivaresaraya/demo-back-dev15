@@ -44,7 +44,7 @@ public class CreditConsumerTest {
         assertThat(answer).isTrue();
     }
 
- /*   @Test
+    @Test
     public void testCase2_ok() {
         //check second range test case
         String name = "peter";
@@ -59,7 +59,7 @@ public class CreditConsumerTest {
     }
 
     @Test
-    public void testCase1_reject() {
+    public void testCase2_reject() {
         //check third range test case
         String name = "peter";
         String email = "peter@email.com";
@@ -69,9 +69,9 @@ public class CreditConsumerTest {
         CreditConsumer consumer = new CreditConsumer(name, email, amount, quotas, income);
 
         //check evaluation that's correct
-        assertThat(consumer.evaluate()).isTrue();
+        assertThat(consumer.evaluate()).isFalse();
     }
-*/
+
     //Check reject evaluation according range rules
     @Test
     public void testcase1Reject() {
