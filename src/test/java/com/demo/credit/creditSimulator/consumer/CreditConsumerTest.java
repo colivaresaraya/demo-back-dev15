@@ -25,7 +25,7 @@ public class CreditConsumerTest {
 
     //Check approve evaluation according range rules
     @Test
-    public void test1() {
+    public void testCase1_ok() {
 
         //prepare - arrange
         //check first range test case
@@ -45,7 +45,7 @@ public class CreditConsumerTest {
     }
 
  /*   @Test
-    public void test2() {
+    public void testCase2_ok() {
         //check second range test case
         String name = "peter";
         String email = "peter@email.com";
@@ -59,7 +59,7 @@ public class CreditConsumerTest {
     }
 
     @Test
-    public void test3() {
+    public void testCase1_reject() {
         //check third range test case
         String name = "peter";
         String email = "peter@email.com";
@@ -74,7 +74,7 @@ public class CreditConsumerTest {
 */
     //Check reject evaluation according range rules
     @Test
-    public void test4() {
+    public void testcase1Reject() {
         //check first range test case
         String name = "peter";
         String email = "peter@email.com";
@@ -90,7 +90,7 @@ public class CreditConsumerTest {
 /*
 
     @Test
-    public void test5() {
+    public void testCase3_ok() {
         //check second range test case
         String name = "peter";
         String email = "peter@email.com";
@@ -104,7 +104,7 @@ public class CreditConsumerTest {
     }
 
     @Test
-    public void test6() {
+    public void testCase1_reject() {
         //check third range test case
         String name = "peter";
         String email = "peter@email.com";
