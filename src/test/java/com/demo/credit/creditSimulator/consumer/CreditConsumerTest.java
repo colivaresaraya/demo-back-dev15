@@ -64,7 +64,7 @@ public class CreditConsumerTest {
         String name = "peter";
         String email = "peter@email.com";
         Integer amount = 3500000; // $3.500.000
-        Integer quotas = 18;
+        Integer quotas = 5;
         Integer income = 1000000; // $1.000.000
         CreditConsumer consumer = new CreditConsumer(name, email, amount, quotas, income);
 
@@ -87,24 +87,24 @@ public class CreditConsumerTest {
         assertThat(consumer.evaluate()).isFalse();
     }
 
-/*
+
 
     @Test
     public void testCase3_ok() {
         //check second range test case
         String name = "peter";
         String email = "peter@email.com";
-        Integer amount = 1500000; // $1.500.000
+        Integer amount = 3500000; // $1.500.000
         Integer quotas = 15;
-        Integer income = 300000; // $300.000
+        Integer income = 700000; // $300.000
         CreditConsumer consumer = new CreditConsumer(name, email, amount, quotas, income);
 
         //check evaluation that's correct
-        assertThat(consumer.evaluate()).isFalse();
+        assertThat(consumer.evaluate()).isTrue();
     }
 
     @Test
-    public void testCase1_reject() {
+    public void testCase3_reject() {
         //check third range test case
         String name = "peter";
         String email = "peter@email.com";
@@ -116,5 +116,5 @@ public class CreditConsumerTest {
         //check evaluation that's correct
         assertThat(consumer.evaluate()).isFalse();
     }
-*/
+
 }
